@@ -1,0 +1,14 @@
+html, body {
+    -ms-touch-action: none;
+    background: #888888;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#video-canvas {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    /*important:  dimensions or positioning here! */
+}

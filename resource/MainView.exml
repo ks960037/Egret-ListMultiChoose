@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainViewSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1920"
+        height="1080">
+    <e:Rect width="100%" height="100%" verticalCenter="0" horizontalCenter="0" fillColor="0x777777" />
+    <e:Image source="bg_jpg" verticalCenter="0" horizontalCenter="0" />
+	<e:Rect width="1020" height="800" verticalCenter="0" horizontalCenter="0" fillAlpha="0.6"/>
+    <e:Scroller id="scr_demo" width="960" height="540" verticalCenter="0" horizontalCenter="0">
+        <e:List id="lst_demo" itemRendererSkinName="ItemRenderer_demoSkin" allowMultipleSelection="true">
+            <e:layout>
+                <e:TileLayout horizontalGap="10" verticalGap="10" requestedColumnCount="4"
+                              horizontalAlign="center" verticalAlign="top" rowAlign="top"
+                              columnAlign="left" orientation="rows"  paddingLeft="65" paddingRight="65"/>
+            </e:layout>
+            <e:ArrayCollection id="arc_demo">
+                <e:Array>
+                    <e:Object itemId="0" itemName="軒轅劍" quality="95" rare="S" color="0xFF50FF" type="weapon" />
+                    <e:Object itemId="1" itemName="鐵劍" quality="5" rare="E" color="0x0050CC" type="weapon" />
+                    <e:Object itemId="2" itemName="木劍" quality="3" rare="E" color="0x0050CC" type="weapon" />
+                    <e:Object itemId="3" itemName="無極戰甲" quality="85" rare="S" color="0xFF50FF" type="arms" />
+                    <e:Object itemId="4" itemName="鐵甲" quality="5" rare="E" color="0x0050CC" type="arms" />
+                    <e:Object itemId="5" itemName="布甲" quality="3" rare="E" color="0x0050CC" type="arms" />
+                    <e:Object itemId="6" itemName="金創藥" quality="5" rare="A" color="0x888888" type="drug" />
+                    <e:Object itemId="7" itemName="草藥" quality="1" rare="E" color="0x888888" type="drug" />
+                    <e:Object itemId="8" itemName="回家卷軸" quality="1" rare="E" color="0x888888" type="drug" />
+                </e:Array>
+            </e:ArrayCollection>
+        </e:List>
+    </e:Scroller>
+	<e:Button id="btn_showRare" label="只顯示稀有" horizontalCenter="-400" verticalCenter="-340"/>
+	<e:Button id="btn_showUnrare" label="只顯示低階" horizontalCenter="0" verticalCenter="-340"/>
+	<e:Button id="btn_showAll" label="顯示全部" verticalCenter="-340" horizontalCenter="400"/>
+	<e:Button id="btn_selecteAll" label="全選" horizontalCenter="-400" verticalCenter="340"/>
+	<e:Button id="btn_selecteBad" label="全選低階" horizontalCenter="0" verticalCenter="340" x="10" y="10"/>
+	<e:Button id="btn_cancelSelected" label="取消選擇" verticalCenter="340" horizontalCenter="400" x="10" y="10"/>
+</e:Skin>
